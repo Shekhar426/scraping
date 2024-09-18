@@ -7,7 +7,7 @@ import concurrent.futures
 logging.basicConfig(level=logging.DEBUG, filename='error.log', format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-tenant_id = 'Blinds'
+tenant_id = 'Blinds Namita'
 competitor_name = 'https://blinds.com/'
 product_dumps = []
 

@@ -53,6 +53,7 @@ for i in path_list[:]:
         parsed_data = {'time_stamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S"), 'tenant_id': "Topo Centras", 'competitor_name': "Avitela", 'title': name, 'mpn': mpn, 'ean': ean, 'brand': brand, 'category': category, 'sub_category': sub_category, 'regular_price': regular_price, 'discounted_price': "", "image_url": images, "priceCurrency": "EUR", "item_url": url, "item_number": item_number, "unprocessed_json": {**unprocessed_json}}
         json_file_path = 'avitela.json'
         print(parsed_data)
+
         # Function to append a dictionary to a list and save it to a JSON file
         def append_dict_to_list_and_save(dictionary, file_path):
             try:

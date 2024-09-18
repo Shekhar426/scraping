@@ -1,8 +1,5 @@
 import json
-from datetime import datetime
-import openpyxl
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -32,7 +29,6 @@ for url in urls[:]:
         price_currency = product_data.get('offers')[i].get('priceCurrency')
         availablity = product_data.get('offers')[i].get('availability').replace("https://schema.org/", "")
         price_valid_until = product_data.get('offers')[i].get('priceValidUntil')
-
         data['title'] = item_name
         data['sku'] = main_sku
         data['variant_sku'] = sku
@@ -41,5 +37,3 @@ for url in urls[:]:
         data['regular_price'] = price
         data['category'] = category
         data['unprocessed_json'] = {"price_currency":price_currency, "price_valid_until":price_valid_until, "availablity":availablity}
-        print(data)
-    print(product_data)

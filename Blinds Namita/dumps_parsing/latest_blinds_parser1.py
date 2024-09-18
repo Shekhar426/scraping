@@ -7,7 +7,7 @@ import concurrent.futures
 logging.basicConfig(level=logging.DEBUG, filename='error.log', format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-tenant_id = 'Blinds'
+tenant_id = 'Blinds Namita'
 competitor_name = 'https://blinds.com/'
 product_dumps = []
 
@@ -17,7 +17,7 @@ url = 47
 
 
 
-directory_path = f"C:\\Users\\SHEKHAR\\Downloads\\Blinds Drive Dumps\\{url}"
+directory_path = f"C:\\Users\\SHEKHAR\\Downloads\\Blinds Namita Drive Dumps\\{url}"
 
 for filename in os.listdir(directory_path):
     if filename.endswith('.html'):
